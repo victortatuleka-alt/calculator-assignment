@@ -1,0 +1,103 @@
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(47, 45, 45);
+    color: aliceblue;
+    font-size:20px;
+    font-weight:100px;
+    cursor:pointer;
+    column-gap:38px;
+    margin-left:-24px;
+    margin-top:10px;
+    font-family: Arial, sans-serif;
+    
+    
+}
+#keys{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 16px;
+    padding:25px;
+    column-gap:21%;
+    font-family:san sans-serif;
+    margin-left:-9px ;
+    margin-bottom:21px;
+
+}
+#calculator{
+    background-color: black;
+    border-radius:25px;
+    box-sizing: border-box;
+    width: 400px;
+    padding: 25px;
+    height: 680px;
+    cursor:pointer;
+    
+}
+#display{
+    margin-top:90px;
+    padding-right:15px;
+    padding-bottom:20px;
+    margin-left:-10px;
+    width:370px;
+    height: 90px;
+    font-size:40px;
+    text-align: right;
+    border: none;
+    background-color: rgb(47,45,45);
+    border-radius:15px ;
+    box-sizing:border-box ;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: bold;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+button:hover{
+    background-color: gray;
+}
+button:active{
+    background-color: lightgrey;
+}
+.operator{
+   background-color: rgb(230, 122, 8);
+    font-size:25px;
+}
+.operator:hover{
+    background-color: rgb(184, 156, 103);
+}
+.operator:active{
+        background-color: rgb(239, 201, 130)
+}
+.ac{
+    background-color: rgb(158, 157, 157);
+    color: black;
+    font-weight:549;
+}
+.zero{
+    grid-column:span 2;
+    width: 150px;
+}
+.equals{
+    grid-column: 4;
+    background-color: rgb(230, 122, 8);
+    font-size:25px;
+}
+.equals:hover{
+    background-color: rgb(184, 156, 103);
+}
+.equals:active{
+    background-color: rgb(239, 201, 130)
+}
+::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
